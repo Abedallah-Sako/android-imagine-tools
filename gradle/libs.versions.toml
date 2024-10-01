@@ -22,6 +22,7 @@ playServicesMaps = "19.0.0"
 recyclerview = "1.3.2"
 retrofit = "2.11.0"
 window = "1.3.0"
+androidLibrary = "8.2.2"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -52,4 +53,5 @@ androidx-window = { group = "androidx.window", name = "window", version.ref = "w
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+android-library = { id = "com.android.library", version.ref = "androidLibrary" }
 

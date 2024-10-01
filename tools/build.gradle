@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-parcelize'
     id 'kotlin-kapt'
+    id 'maven-publish'
 }
 
 android {
@@ -23,6 +24,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -32,6 +40,30 @@ android {
     }
     buildFeatures {
         viewBinding true
+    }
+
+
+
+}
+
+publishing {
+    publications {
+        register("release",MavenPublication.class) {
+            groupId = "com.imagine.android_imagine_tools"
+            artifactId = "tools"
+            version = "1.0"
+
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
+
+    repositories {
+        maven {
+            name = "imagineToolsRepo"
+            url = uri("${layout.buildDirectory}/repo")
+        }
     }
 }
 
