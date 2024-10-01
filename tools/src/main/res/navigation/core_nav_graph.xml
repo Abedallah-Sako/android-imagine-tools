@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/super_app_main_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.splash.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_onBoardingFragment"
+            app:destination="@id/onBoardingFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_InterestFragment"
+            app:destination="@id/InterestsFragment"
+            app:popUpTo="@id/super_app_main_graph" />
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/super_app_main_graph" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_homeFragment_to_attractionsFragment"
+            app:destination="@id/attractionsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_attractionsInnerFragment"
+            app:destination="@id/SeeAndDoInnerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_jordanCalendarInnerFragment"
+            app:destination="@id/jordanCalendarInnerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_jordanCalendarFragment"
+            app:destination="@id/jordanCalendarFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_jordanPassFragment"
+            app:destination="@id/jordanPassFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_jordanEticketBuyTickets"
+            app:destination="@id/jordanEticketBuyTickets"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_StoriesFragment"
+            app:destination="@id/StoriesFragment"
+            app:enterAnim="@anim/slide_in_to_top_no_delay"
+            app:exitAnim="@anim/slide_out_to_bottom"
+            app:popEnterAnim="@anim/slide_in_to_top_no_delay"
+            app:popExitAnim="@anim/slide_out_to_bottom" />
+        <action
+            android:id="@+id/action_homeFragment_to_TicketListFragment"
+            app:destination="@id/TicketListFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_MuseumFragment"
+            app:destination="@id/MuseumFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_MuseumInnerFragment"
+            app:destination="@id/MuseumInnerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_LocalRecommendationInnerFragment"
+            app:destination="@id/LocalRecommendationInnerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_userProfile"
+            app:destination="@id/userProfile"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out"/>
+        <action
+            android:id="@+id/action_homeFragment_to_jordanPassBuyTickets"
+            app:destination="@id/jordanPassBuyTickets"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_notificationListFragment"
+            app:destination="@id/notificationListFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_homeFragment_to_attractionsNewFragment"
+            app:destination="@id/attractionsNewFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_localExperienceInnerFragment"
+            app:destination="@id/localExperienceInnerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/offersFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.offers.OffersFragment"
+        android:label="fragment_offers"
+        tools:layout="@layout/fragment_offers" >
+        <action
+            android:id="@+id/action_offersFragment_to_TicketListFragment"
+            app:destination="@id/TicketListFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_offersFragment_to_OffersInnerFragment"
+            app:destination="@id/OffersInnerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_offersFragment_to_jordanPassFragment"
+            app:destination="@id/jordanPassFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_offersFragment_to_jordanEticketBuyTickets"
+            app:destination="@id/jordanEticketBuyTickets"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_offersFragment_to_jordanCalendarInnerFragment"
+            app:destination="@id/jordanCalendarInnerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_offersFragment_to_attractionsInnerFragment"
+            app:destination="@id/attractionsInnerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_offersFragment_to_jordanPassBuyTickets"
+            app:destination="@id/jordanPassBuyTickets"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/seeAndDoFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.seeAndDo.SeeAndDoFragment"
+        android:label="fragment_chat">
+        <action
+            android:id="@+id/action_chatFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_chatFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_chatFragment_to_localCustomHome"
+            app:destination="@id/localCustomHome"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_seeAndDoFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_seeAndDoFragment_to_SeeAndDoInnerFragment"
+            app:destination="@id/SeeAndDoInnerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_seeAndDoFragment_to_TicketListFragment"
+            app:destination="@id/TicketListFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_seeAndDoFragment_to_jordanPassFragment"
+            app:destination="@id/jordanPassFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_seeAndDoFragment_to_jordanEticketBuyTickets"
+            app:destination="@id/jordanEticketBuyTickets"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_seeAndDoFragment_to_jordanCalendarInnerFragment"
+            app:destination="@id/jordanCalendarInnerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_seeAndDoFragment_to_attractionsInnerFragment"
+            app:destination="@id/attractionsInnerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_seeAndDoFragment_to_jordanPassBuyTickets"
+            app:destination="@id/jordanPassBuyTickets"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.onBoarding.OnBoardingFragment"
+        android:label="OnBoardingFragment"
+        tools:layout="@layout/fragment_on_boarding"
+        >
+        <action
+            android:id="@+id/action_onBoardingFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/super_app_main_graph" />
+        <action
+            android:id="@+id/action_onBoardingFragment_to_InterestsFragment"
+            app:destination="@id/InterestsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/attractionsFragment"
+        android:name="com.imagine.jordanpass.attractionsmodule.ui.fragment.attractions.AttractionsFragment"
+        android:label="AttractionsFragment"
+        tools:layout="@layout/fragment_attractions">
+        <action
+            android:id="@+id/action_attractionsFragment_to_attractionsInnerFragment"
+            app:destination="@id/attractionsInnerFragment" />
+        <action
+            android:id="@+id/action_attractionsFragment_to_attractionsSearchFragment"
+            app:destination="@id/attractionsSearchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/attractionsInnerFragment"
+        tools:layout="@layout/fragment_attractions_inner"
+        android:name="com.imagine.jordanpass.attractionsmodule.ui.fragment.attractionsInner.AttractionsInnerFragment"
+        android:label="AttractionsInnerFragment" >
+
+        <argument
+            android:name="attraction"
+            app:argType="com.imagine.jordanpass.tools.model.landMark.LandMarkModel" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/attractionsSearchFragment"
+        tools:layout="@layout/fragment_attractions_search"
+        android:name="com.imagine.jordanpass.attractionsmodule.ui.fragment.attractionsSearch.AttractionsSearchFragment"
+        android:label="AttractionsSearchFragment" >
+
+                <argument
+                    android:name="search"
+                    app:argType="com.imagine.jordanpass.tools.model.AttractionsModel$AttractionsModelItem[]" />
+        <action
+            android:id="@+id/action_attractionsSearchFragment_to_attractionsInnerFragment"
+            app:destination="@id/attractionsInnerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/jordanCalendarInnerFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.jordanCalendarInner.JordanCalendarInnerFragment"
+        android:label="JordanCalendarInnerFragment" >
+        <argument
+            android:name="eventID"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.more.MoreFragment"
+        android:label="fragment_more"
+        tools:layout="@layout/fragment_more" >
+        <action
+            android:id="@+id/action_moreFragment_to_localCustomHome"
+            app:destination="@id/localCustomHome"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_moreFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_moreFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_moreFragment_to_FaqFragment"
+            app:destination="@id/FaqFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_moreFragment_to_EmergencyNumbersFragment"
+            app:destination="@id/EmergencyNumbersFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_moreFragment_to_TicketListFragment"
+            app:destination="@id/TicketListFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_moreFragment_to_jordanPassFragment"
+            app:destination="@id/jordanPassFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_moreFragment_to_ticketFragment"
+            app:destination="@id/ticketFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_moreFragment_to_jordanEticketBuyTickets"
+            app:destination="@id/jordanEticketBuyTickets"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_moreFragment_to_jordanCalendarInnerFragment"
+            app:destination="@id/jordanCalendarInnerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_moreFragment_to_attractionsInnerFragment"
+            app:destination="@id/attractionsInnerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_moreFragment_to_jordanPassBuyTickets"
+            app:destination="@id/jordanPassBuyTickets"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_moreFragment_to_transportationFragment"
+            app:destination="@id/transportationFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/jordanCalendarFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.jordanCalendar.JordanCalendarFragment"
+        android:label="JordanCalendarFragment" >
+        <action
+            android:id="@+id/action_jordanCalendarFragment_to_jordanCalendarInnerFragment"
+            app:destination="@id/jordanCalendarInnerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/StoriesFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.stories.StoriesFragment"
+        android:label="StoriesFragment"
+        >
+        <argument
+            android:name="data"
+            app:argType="string" />
+        <argument
+            android:name="startId"
+            app:argType="integer" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/FaqFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.faq.FaqFragment"
+        android:label="FaqFragment"
+        >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/EmergencyNumbersFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.emergencyNumbers.EmergencyNumbersFragment"
+        android:label="EmergencyNumbersFragment"
+        >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/TicketListFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.ticketList.TicketListFragment"
+        android:label="TicketListFragment"
+        >
+
+        <action
+            android:id="@+id/action_TicketListFragment_to_ticketFragment"
+            app:destination="@id/ticketFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_TicketListFragment_to_eticketFragment"
+            app:destination="@id/eticketFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/MuseumFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.museum.MuseumFragment"
+        android:label="MuseumFragment">
+
+        <action
+            android:id="@+id/action_museumFragment_to_MuseumInnerFragment"
+            app:destination="@id/MuseumInnerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/MuseumInnerFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.museum.museumInner.MuseumInnerFragment"
+        android:label="MuseumInnerFragment">
+
+        <argument
+            android:name="museum"
+            app:argType="integer"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/SeeAndDoInnerFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.seeAndDo.SeeAndDoInnerFragment"
+        android:label="SeeAndDoInnerFragment"
+        >
+
+        <argument
+            android:name="landMarkItem"
+            app:argType="com.imagine.jordanpass.tools.model.landMark.LandMarkModel" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/LocalRecommendationInnerFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.localRecommendationInner.LocalRecommendationInnerFragment"
+        android:label="LocalRecommendationInnerFragment"
+        >
+        <argument
+            android:name="localRec"
+            app:argType="com.imagine.jordanpass.tools.model.LocalRecommendationModel" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/OffersInnerFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.offersInner.OffersInner"
+        android:label="OffersInnerFragment"
+        >
+        <argument
+            android:name="offer"
+            app:argType="com.imagine.jordanpass.tools.model.OffersModel$Step" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/InterestsFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.interests.InterestsFragment"
+        android:label="InterestsFragment"
+        >
+        <action
+            android:id="@+id/action_InterestsFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/super_app_main_graph"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+
+    <!--Jordan pass-->
+    <fragment
+        android:id="@+id/jordanPassFragment"
+        android:name="com.imagine.jordanpassModule.ui.fragments.jordanPass.JordanPassFragment"
+        android:label="JordanPassFragment"
+        tools:layout="@layout/fragment_jordan_pass">
+        <action
+            android:id="@+id/action_jordanPassFragment_to_ticketFragment"
+            app:destination="@id/ticketFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/action_jordanPassFragment_to_jordanPassBuyTickets"
+            app:destination="@id/jordanPassBuyTickets"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/action_jordanpassFragment_to_attractionsInnerFragment"
+            app:destination="@id/attractionsInnerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_jordanPassFragment_to_TicketListFragment"
+            app:destination="@id/TicketListFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/ticketFragment"
+        android:name="com.imagine.jordanpassModule.ui.fragments.ticket.TicketFragment"
+        android:label="fragment_ticket"
+        tools:layout="@layout/fragment_ticket" >
+        <argument
+            android:name="ticket"
+            app:argType="com.imagine.jordanpass.tools.model.Ticket" />
+    </fragment>
+    <dialog
+        android:id="@+id/addTicketDialog"
+        android:name="com.imagine.jordanpassModule.ui.dialogs.AddTicketDialog"
+        android:label="AddTicketDialog"
+        tools:layout="@layout/dialog_add_ticket"/>
+
+    <fragment
+        android:id="@+id/jordanPassBuyTickets"
+        android:name="com.imagine.jordanpassModule.ui.fragments.jordanPassWebView.JordanPassWebViewFragment"
+        tools:layout="@layout/fragment_jordan_pass_web_view"
+        android:label="jordan_pass_web_view"
+        >
+
+        <action
+            android:id="@+id/action_jordanPassBuyTickets_to_TicketListFragment"
+            app:destination="@id/TicketListFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+
+<!--Jordan e-tickets -->
+    <fragment
+        android:id="@+id/jordaETicketsFragment"
+        android:name="com.imagine.jordaneticketsmodule.ui.fragments.jordanETickets.JordanETicketsFragment"
+        android:label="fragment_jordan_etickets"
+        tools:layout="@layout/fragment_jordan_etickets" >
+
+        <action
+            android:id="@+id/action_jordanETicketsFragment_to_eticketFragment"
+            app:destination="@id/eticketFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+        <action
+            android:id="@+id/action_jordanETicketsFragment_to_jordanEticketBuyTickets"
+            app:destination="@id/jordanEticketBuyTickets"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/eticketFragment"
+        android:name="com.imagine.jordaneticketsmodule.ui.fragments.ticket.ETicketFragment"
+        android:label="fragment_eticket"
+        tools:layout="@layout/fragment_eticket" >
+        <argument
+            android:name="ticket"
+            app:argType="com.imagine.jordanpass.tools.model.Eticket" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/addETicketDialog"
+        android:name="com.imagine.jordaneticketsmodule.ui.dialogs.AddETicketDialog"
+        android:label="AddETicketDialog"
+        tools:layout="@layout/dialog_add_eticket"/>
+
+    <fragment
+        android:id="@+id/jordanEticketBuyTickets"
+        android:name="com.imagine.jordaneticketsmodule.ui.fragments.jordanEticketsWebView.JordanEticketsWebViewFragment"
+        tools:layout="@layout/fragment_jordan_etickets_web_view"
+        android:label="jordan_etickets_web_view"
+        >
+        <action
+            android:id="@+id/action_jordanEticketBuyTickets_to_TicketListFragment"
+            app:destination="@id/TicketListFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+<!--        <action-->
+<!--            android:id="@+id/action_jordanEticketBuyTickets_to_jordanEticketBuyTickets"-->
+<!--            app:destination="@id/jordanEticketBuyTickets"-->
+<!--            app:enterAnim="@anim/fade_in"-->
+<!--            app:exitAnim="@anim/fade_out"-->
+<!--            app:popEnterAnim="@anim/fade_in"-->
+<!--            app:popExitAnim="@anim/fade_out"-->
+<!--            />-->
+
+    </fragment>
+
+    <!--  getting around  -->
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.imagine.jordanpass.gettingaround.ui.fragments.home.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_mapsFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.imagine.jordanpass.gettingaround.ui.fragments.details.DetailsFragment"
+        android:label="DetailsFragment"
+        tools:layout="@layout/fragment_details">
+
+        <argument
+            android:name="landMarkItem"
+            app:argType="com.imagine.jordanpass.tools.model.landMark.LandMarkModel" />
+    </fragment>
+
+    <!--Visas-->
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.imagine.jordanpass.visas.ui.visasFragment.MainFragment"
+        android:label="MainFragment" />
+
+    <!--Local customs-->
+    <fragment
+        android:id="@+id/localCustomHome"
+        android:name="com.imagine.jordanpass.localcustomsmodule.ui.fragments.home.HomeLocalCustomsFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_localcustoms_home" />
+
+<!--    User profile-->
+    <fragment
+        android:id="@+id/userProfile"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.userProfile.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" />
+
+    <!--   Update User profile-->
+    <fragment
+        android:id="@+id/updateUserData"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.userProfile.updateUserProfile.userData.UpdateUserDataFragment"
+        android:label="fragment_update_user_data"
+        tools:layout="@layout/fragment_update_user_data" />
+
+    <fragment
+        android:id="@+id/notificationListFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.notificationList.NotificationListFragment"
+        android:label="fragment_notification_list"
+        tools:layout="@layout/fragment_notification_list">
+        <action
+            android:id="@+id/action_attractionsNewFragment_to_detailsFragment"
+            app:destination="@id/SeeAndDoInnerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/transportationFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.transportation.TransportationFragment"
+        android:label="fragment_transportation"
+        tools:layout="@layout/fragment_transportation" />
+
+
+    <fragment
+        android:id="@+id/attractionsNewFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.attractions.AttractionsNewFragment"
+        android:label="fragment_attractions_new"
+        tools:layout="@layout/fragment_attractions_new" >
+        <action
+            android:id="@+id/action_attractionsNewFragment_to_detailsFragment"
+            app:destination="@id/SeeAndDoInnerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/localExperienceFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.localExperiences.LocalExperiencesFragment"
+        android:label="fragment_local_experience"
+        tools:layout="@layout/fragment_local_experience" >
+        <action
+            android:id="@+id/action_localExperienceFragment_to_localExperienceInnerFragment"
+            app:destination="@id/localExperienceInnerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_localExperienceFragment_to_TicketListFragment"
+            app:destination="@id/TicketListFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_localExperienceFragment_to_jordanCalendarInnerFragment"
+            app:destination="@id/jordanCalendarInnerFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_localExperienceFragment_to_TicketListFragment2"
+            app:destination="@id/TicketListFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_localExperienceFragment_to_jordanPassBuyTickets"
+            app:destination="@id/jordanPassBuyTickets"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+        <action
+            android:id="@+id/action_localExperienceFragment_to_jordanPassFragment"
+            app:destination="@id/jordanPassFragment"
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/localExperienceInnerFragment"
+        android:name="com.imagine.jordanpass.superapplication.ui.fragments.localExperiencesInner.LocalExperienceInnerFragment"
+        android:label="fragment_local_experience_inner"
+        tools:layout="@layout/fragment_local_experience_inner" >
+        <argument
+            android:name="localExperienceItem"
+            app:argType="com.imagine.jordanpass.tools.model.LocalExperience" />
+    </fragment>
+
+
+</navigation>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <!--  earth  -->
+    <color name="earth">#9a4a3a</color>
+    <color name="earth_26">#429A4A3A</color>
+    <color name="earth_16">#299a4a3a</color>
+    <color name="earth_04">#669a4a3a</color>
+
+    <!-- black -->
+    <color name="black">#FF000000</color>
+    <color name="black_10">#1A000000</color>
+    <color name="black_10_hex">#e0dfdd</color>
+    <color name="black_zero">#272727</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_20_hex">#ecebea</color>
+    <color name="text_black">#1b1b19</color>
+    <color name="text_black_60">#991B1B19</color>
+    <color name="black_opacity_40">#66000000</color>
+    <color name="black_opacity_60">#99000000</color>
+
+    <!--  dark  -->
+    <color name="dark">#101a28</color>
+
+    <!--  grey  -->
+    <color name="light_grey_zero">#f0ede8</color>
+    <color name="light_grey">#e8efee</color>
+    <color name="light_grey_Two">#e7e3dc</color>
+    <color name="warm_grey">#808080</color>
+    <color name="warm_grey_two">#999999</color>
+    <color name="steel">#868e96</color>
+    <color name="sub_marker">#cccccc</color>
+    <color name="text_sim_dark">#384657</color>
+    <color name="gray">#a5a5a5</color>
+    <color name="warm_grey_40">#66808080</color>
+    <color name="pinkish_grey">#c6c6c6</color>
+    <color name="pale_grey">#F3F9FB</color>
+    <color name="mercury">#e5e5e5</color>
+    <color name="greyish">#c2c1c0</color>
+    <color name="light_grey_two">#EAEFE8</color>
+    <color name="light_grey_20">#33E8EFEE</color>
+    <color name="light_grey_40">#66e8efee</color>
+    <color name="light_grey_60">#99E8EFEE</color>
+
+    <!--  shimmer grey  -->
+    <color name="shimmer_grey">#CBCBCB</color>
+    <color name="shimmer_grey_40">#66CBCBCB</color>
+
+    <!-- white  -->
+    <color name="white_zero">#f9f8f6</color>
+    <color name="cultured">#F8F8F8</color>
+    <color name="white_one">#f9f6f3</color>
+
+    <!--  green  -->
+    <color name="greenish">#429f53</color>
+    <color name="greenish_10">#1a429f53</color>
+
+    <!-- lipstick  -->
+    <color name="lipstick">#db1f2a</color>
+    <color name="lipstick_0.04">#0adb1f2a</color>
+    <color name="lipstick_0.07">#12db1f2a</color>
+
+    <!--  REST  -->
+    <color name="greyish_brown">#46413d</color>
+    <color name="active_marker">#222a52</color>
+    <color name="blue_lagoon">#3A8A9A</color>
+    <color name="dark_green">#5A9A3A</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="red_favorite">#FF003B</color>
+    <color name="dark_grey_blue">#384657</color>
+    <color name="orange_jordanpass">#f5a561</color>
+    <color name="orange_eticket">#f37b01</color>
+    <color name="dark_gray">#303030</color>
+    <color name="burnt_sienna">#c14217</color>
+    <color name="burnt_sienna_10">#66c14217</color>
+    <color name="purple_brown">#522633</color>
+    <color name="french_blue">#3d5aa9</color>
+    <color name="medium_purple">#9b4c9d</color>
+    <color name="cloud_burst">#222a52</color>
+    <color name="error_red">#B00020</color>
+    <color name="sunset_yellow">#ffc922</color>
+    <color name="terra_cotta">#c35232</color>
+    <color name="terra_cotta_20">#33C35232</color>
+
+
+</resources>

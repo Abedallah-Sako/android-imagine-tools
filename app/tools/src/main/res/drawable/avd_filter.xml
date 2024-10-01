@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/vd_filter">
+
+    <target
+        android:name="star_group"
+        android:animation="@animator/ani_filter"
+        />
+
+    <target
+        android:name="star_path"
+        android:animation="@animator/ani_filter_path" />
+</animated-vector>

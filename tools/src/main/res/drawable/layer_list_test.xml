@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="110"
+    android:viewportHeight="110">
+
+    <group
+        android:name="border_group_1"
+        android:translateX="72"
+        android:translateY="50"
+        android:scaleY="0.3"
+        android:scaleX="0.3"
+        android:rotation="0">
+
+
+        <path
+            android:name="border_path"
+            android:pathData="M 65,10 a 20,20 0 1,0 40,0 a 20,20 0 1,0 -40,0"
+            android:fillColor="@color/steel"
+            android:fillAlpha="0.5"
+            android:strokeColor="@color/steel"
+            android:strokeWidth="0" />
+    </group>
+
+    <group
+        android:name="border_group_2"
+        android:translateX="62"
+        android:translateY="56"
+        android:scaleY="0.4"
+        android:scaleX="0.4"
+        android:rotation="0">
+
+        <path
+
+            android:pathData="M 45,60 a 20,20 0 1,0 40,0 a 20,20 0 1,0 -40,0"
+            android:fillColor="@color/warm_grey_two"
+            android:fillAlpha="0.6"
+            android:strokeColor="@color/warm_grey_two"
+            android:strokeWidth="0"/>
+    </group>
+    <group
+        android:name="border_group_3"
+        android:translateX="52"
+        android:translateY="52"
+        android:scaleY="0.5"
+        android:scaleX="0.5"
+        android:rotation="0">
+
+        <path
+            android:pathData="M -5,80 a 20,20 0 1,0 40,0 a 20,20 0 1,0 -40,0"
+            android:fillColor="@color/white_zero"
+            android:fillAlpha="0.65"
+            android:strokeColor="@color/white_zero"
+            android:strokeWidth="0" />
+    </group>
+
+    <group
+        android:name="border_group_4"
+        android:translateX="50"
+        android:translateY="50"
+        android:scaleY="0.58"
+        android:scaleX="0.58"
+        android:rotation="0">
+        <path
+
+            android:pathData="M -55,60 a 20,20 0 1,0 40,0 a 20,20 0 1,0 -40,0"
+            android:fillColor="@color/white_zero"
+            android:strokeColor="@color/white_zero"
+            android:fillAlpha="0.8"
+            android:strokeWidth="0" />
+    </group>
+
+    <group
+        android:name="border_group_5"
+        android:translateX="53"
+        android:translateY="50"
+        android:scaleY="0.65"
+        android:scaleX="0.65"
+        android:rotation="0">
+
+        <path
+
+            android:pathData="M -75,10 a 20,20 0 1,0 40,0 a 20,20 0 1,0 -40,0"
+            android:fillColor="@color/white_zero"
+            android:fillAlpha="0.9"
+            android:strokeColor="@color/white_zero"
+            android:strokeWidth="0" />
+    </group>
+
+    <group
+        android:name="border_group_6"
+        android:translateX="52"
+        android:translateY="52"
+        android:scaleY="0.68"
+        android:scaleX="0.68"
+        android:rotation="0">
+        <path
+
+            android:pathData="M -55,-40 a 20,20 0 1,0 40,0 a 20,20 0 1,0 -40,0"
+            android:fillColor="@color/white"
+            android:strokeColor="@color/white"
+            android:fillAlpha="0.8"
+            android:strokeWidth="0" />
+
+    </group>
+
+    <group
+        android:name="border_group_7"
+        android:translateX="52"
+        android:translateY="60"
+        android:scaleY="0.72"
+        android:scaleX="0.72"
+        android:rotation="0">
+        <path
+
+            android:pathData="M -5,-60 a 20,20 0 1,0 40,0 a 20,20 0 1,0 -40,0"
+            android:fillColor="@color/white"
+            android:strokeColor="@color/white"
+            android:fillAlpha="0.7"
+            android:strokeWidth="0" />
+    </group>
+
+    <group
+        android:name="border_group_8"
+        android:translateX="78"
+        android:translateY="40"
+        android:scaleY="0.2"
+        android:scaleX="0.2"
+        android:rotation="0">
+
+        <path
+
+            android:pathData="M 45,-40 a 20,20 0 1,0 40,0 a 20,20 0 1,0 -40,0"
+            android:fillColor="@color/warm_grey"
+            android:fillAlpha="0.2"
+            android:strokeColor="@color/warm_grey"
+            android:strokeWidth="0"/>
+    </group>
+
+
+
+</vector>

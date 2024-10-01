@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_tab">SETTINGS</string>
+    <string name="location_permission_popup_title">Location Permission</string>
+    <string name="location_permission_rationale">To get your Location, the app needs the location permission.</string>
+    <string name="location_permission_warning">This feature requires location permission to get your location.</string>
+    <string name="location_permission_settings">Since the location permission has been denied multiple times you have to enable it from the app setting.</string>
+
+    <string name="something_went_wrong_error">Something went wrong, Please try again later.</string>
+
+    <string name="content_description_open_map">open map</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="delete">Delete</string>
+
+    <string name="use_valid_URL">Please use a valid URL</string>
+    <string name="something_went_wrong">Something went wrong, Please try again later.</string>
+    <string name="extension_not_supported_error">The selected image extension is not supported, please try again with another image.</string>
+    <string name="permission_denied_prev">Permission denied previously</string>
+    <string name="er_notification_permission_denied">Notifications permission was denied previously, you can grant permission to receive notifications from the settings page on your android device. \n<b>open settings page?</b></string>
+
+
+</resources>

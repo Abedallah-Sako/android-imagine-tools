@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_heart_fill_start">
+
+    <target
+        android:animation="@animator/anim_heart_start"
+        android:name="fill_group"/>
+
+    <target
+        android:animation="@animator/anim_heart_end"
+        android:name="border_group"/>
+
+
+</animated-vector>
