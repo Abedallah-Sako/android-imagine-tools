@@ -3,6 +3,7 @@ package com.imagine.android_imagine_tools.tools.utils
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.Color
 import android.graphics.drawable.BitmapDrawable
@@ -191,7 +192,46 @@ object Tools {
             activity.startActivity(mapIntent)
         }
     }
-    
+
+    fun openAppOrWebsite(uri: String, url: String, activity: Activity) {
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(uri))
+
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+
+                //check if app is installed
+                val list = activity.packageManager.queryIntentActivities(
+                    intent,
+                    PackageManager.ResolveInfoFlags.of(PackageManager.MATCH_DEFAULT_ONLY.toLong())
+                )
+
+                //if not installed open website
+                if (list.size == 0) {
+                    intent.data = Uri.parse(url)
+                }
+
+                activity.startActivity(intent)
+
+            } else {
+
+                //check if app is installed
+                val list =
+                    activity.packageManager.queryIntentActivities(
+                        intent,
+                        PackageManager.MATCH_DEFAULT_ONLY
+                    )
+
+                //if not installed open website
+                if (list.size == 0) {
+                    intent.data = Uri.parse(url)
+                }
+                activity.startActivity(intent)
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+    }
+
 
 
 }
