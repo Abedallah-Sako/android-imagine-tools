@@ -2,9 +2,15 @@ package com.imagine.android_imagine_tools.tools.ui.views.imageTextList
 
 import android.content.Context
 import android.graphics.drawable.Drawable
+import android.text.Spannable
+import android.text.SpannableString
+import android.text.Spanned
+import android.text.SpannedString
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.FrameLayout
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.imagine.android_imagine_tools.tools.R
@@ -31,11 +37,19 @@ class ImageTextList @JvmOverloads constructor(
         recyclerView.adapter = adapter
     }
 
-    fun submitList(list: List<Pair<Drawable?, String?>>) {
+    fun setAlignDrawableTop(alignDrawableTop: Boolean) {
+        adapter.setAlignDrawableTop(alignDrawableTop)
+    }
+
+    fun setOnBindCallback(callback:(TextView, ImageView) -> Unit){
+        adapter.setOnBindCallback(callback)
+    }
+
+    fun submitList(list: List<Pair<Drawable?, Spannable?>>) {
         adapter.submitList(list)
     }
 
-    fun submitList(list: List<String?>, drawable: Drawable?) {
+    fun submitList(list: List<Spannable?>, drawable: Drawable?) {
         adapter.submitList(list.map { Pair(drawable, it) })
     }
 

@@ -15,7 +15,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/item_image_text_list_text_view"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/item_image_text_list_text_view"
-        />
+        tools:src="@drawable/ic_add" />
 
     <TextView
         android:id="@+id/item_image_text_list_text_view"
@@ -28,6 +28,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/item_image_text_list_image_view"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Wheelchair accessible" />
+        tools:text="accessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessibleaccessible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
