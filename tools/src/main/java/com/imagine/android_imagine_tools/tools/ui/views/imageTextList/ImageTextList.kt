@@ -41,6 +41,10 @@ class ImageTextList @JvmOverloads constructor(
         adapter.setAlignDrawableTop(alignDrawableTop)
     }
 
+    fun setCrossFade(crossFade: Boolean) {
+        adapter.setCrossFade(crossFade)
+    }
+
     fun setOnBindCallback(callback:(TextView, ImageView) -> Unit){
         adapter.setOnBindCallback(callback)
     }

@@ -17,6 +17,7 @@ import com.imagine.android_imagine_tools.tools.ext.toPx
 
 class ImageTextListAdapter : Adapter<ViewHolder>() {
     private var alignDrawableTop = false
+    private var crossFade = true
     private var callback: ((TextView,ImageView)->Unit)? = null
 
     inner class ImageTextListViewHolder(private val binding: ItemImageTextListBinding) :
@@ -32,7 +33,7 @@ class ImageTextListAdapter : Adapter<ViewHolder>() {
 
             }
             binding.itemImageTextListImageView.load(item.first) {
-                crossfade(true)
+                crossfade(crossFade)
             }
 
             binding.itemImageTextListTextView.text = item.second
@@ -83,6 +84,10 @@ class ImageTextListAdapter : Adapter<ViewHolder>() {
 
     fun setAlignDrawableTop(alignDrawableTop: Boolean) {
         this.alignDrawableTop = alignDrawableTop
+    }
+
+    fun setCrossFade(crossFade:Boolean){
+        this.crossFade = crossFade
     }
     
     fun setOnBindCallback(callback: (TextView,ImageView)->Unit){
