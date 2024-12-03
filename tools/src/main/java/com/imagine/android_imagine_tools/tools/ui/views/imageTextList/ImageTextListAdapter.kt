@@ -18,6 +18,7 @@ import com.imagine.android_imagine_tools.tools.ext.toPx
 class ImageTextListAdapter : Adapter<ViewHolder>() {
     private var alignDrawableTop = false
     private var crossFade = true
+    private var useCoil = true
     private var callback: ((TextView,ImageView)->Unit)? = null
 
     inner class ImageTextListViewHolder(private val binding: ItemImageTextListBinding) :
@@ -32,8 +33,13 @@ class ImageTextListAdapter : Adapter<ViewHolder>() {
                 binding.itemImageTextListImageView.layoutParams = layoutParams
 
             }
-            binding.itemImageTextListImageView.load(item.first) {
-                crossfade(crossFade)
+
+            if(useCoil) {
+                binding.itemImageTextListImageView.load(item.first) {
+                    crossfade(crossFade)
+                }
+            }else{
+                binding.itemImageTextListImageView.setImageDrawable(item.first)
             }
 
             binding.itemImageTextListTextView.text = item.second
@@ -88,6 +94,10 @@ class ImageTextListAdapter : Adapter<ViewHolder>() {
 
     fun setCrossFade(crossFade:Boolean){
         this.crossFade = crossFade
+    }
+
+    fun doUseCoil(enabled:Boolean){
+        this.useCoil = enabled
     }
     
     fun setOnBindCallback(callback: (TextView,ImageView)->Unit){

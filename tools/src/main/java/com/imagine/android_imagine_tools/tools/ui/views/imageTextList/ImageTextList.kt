@@ -45,6 +45,10 @@ class ImageTextList @JvmOverloads constructor(
         adapter.setCrossFade(crossFade)
     }
 
+    fun doUseCoil(enabled:Boolean){
+        adapter.doUseCoil(enabled)
+    }
+
     fun setOnBindCallback(callback:(TextView, ImageView) -> Unit){
         adapter.setOnBindCallback(callback)
     }
