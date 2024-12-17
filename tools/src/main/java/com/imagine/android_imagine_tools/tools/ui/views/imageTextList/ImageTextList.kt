@@ -19,7 +19,7 @@ class ImageTextList @JvmOverloads constructor(
     private val context: Context, private val attr: AttributeSet? = null,
     private val defStyleAttr: Int = 0
 ) : FrameLayout(context, attr, defStyleAttr) {
-    private lateinit var recyclerView: RecyclerView
+    lateinit var recyclerView: RecyclerView
     private lateinit var adapter: ImageTextListAdapter
 
     init {
