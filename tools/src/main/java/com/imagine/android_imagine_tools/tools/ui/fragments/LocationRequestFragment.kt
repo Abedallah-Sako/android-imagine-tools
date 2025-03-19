@@ -1,4 +1,4 @@
-package com.imagine.android_imagine_tools.tools.ui.fragments.webView
+package com.imagine.android_imagine_tools.tools.ui.fragments
 
 import android.Manifest
 import android.annotation.SuppressLint
