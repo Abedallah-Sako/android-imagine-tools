@@ -43,7 +43,7 @@ class WriteExternalPermissionRequestFragment : Fragment() {
     }
 
     private fun checkPermission() {
-        //handle permission on api < 29
+        //handle permission on api < 30
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.R) {
             requestPermission()
         } else {
