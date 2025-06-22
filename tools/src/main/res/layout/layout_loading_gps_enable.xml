@@ -39,7 +39,6 @@
             android:text="Enable GPS"
             android:inputType="text"
             android:background="@drawable/transparent_bg_bordered_button"
-            android:fontFamily="@font/draft_b_regular"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:textSize="10sp"
