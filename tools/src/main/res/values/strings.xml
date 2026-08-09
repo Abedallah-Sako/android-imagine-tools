@@ -6,10 +6,6 @@
     <string name="location_permission_warning">This feature requires location permission to get your location.</string>
     <string name="location_permission_settings">Since the location permission has been denied multiple times you have to enable it from the app setting.</string>
 
-    <string name="something_went_wrong_error">Something went wrong, Please try again later.</string>
-
-    <string name="content_description_open_map">open map</string>
-
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="camera">Camera</string>
     <string name="gallery">Gallery</string>

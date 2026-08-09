@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="settings_tab">الإعدادات</string>
+    <string name="location_permission_popup_title">إذن الموقع</string>
+    <string name="location_permission_rationale">للحصول على موقعك، يحتاج التطبيق إلى إذن الوصول للموقع.</string>
+    <string name="location_permission_warning">تتطلب هذه الميزة إذن الموقع للحصول على موقعك.</string>
+    <string name="location_permission_settings">بما أنه تم رفض إذن الوصول للموقع لعدة مرات، يجب عليك تمكينه من إعدادات التطبيق.</string>
+
+
+    <string name="hello_blank_fragment">مرحبًا بالقسم الفارغ</string>
+    <string name="camera">الكاميرا</string>
+    <string name="gallery">المعرض</string>
+    <string name="delete">حذف</string>
 
     <string name="use_valid_URL">الرجاء استخدام رابط فعال</string>
     <string name="something_went_wrong">حدث خطأ ما، يرجى المحاولة مرة أخرى لاحقًا.</string>
-
-
+    <string name="extension_not_supported_error">امتداد الصورة المحددة غير مدعوم، يرجى المحاولة مرة أخرى.</string>
+    <string name="permission_denied_prev">تم رفض الإذن سابقاً</string>
+    <string name="er_notification_permission_denied">تم رفض إذن الإشعارات مسبقًا، يمكنك منح الإذن لتلقي الإشعارات من صفحة الإعدادات على جهاز الأندرويد الخاص بك. \n<b>هل تود فتح صفحة الإعدادات؟</b></string>
 </resources>
