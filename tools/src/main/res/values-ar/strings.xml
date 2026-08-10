@@ -14,7 +14,7 @@
 
     <string name="use_valid_URL">الرجاء استخدام رابط فعال</string>
     <string name="something_went_wrong">حدث خطأ ما، يرجى المحاولة مرة أخرى لاحقًا.</string>
-    <string name="extension_not_supported_error">امتداد الصورة المحددة غير مدعوم، يرجى المحاولة مرة أخرى.</string>
+    <string name="extension_not_supported_error">امتداد الصورة المحددة غير مدعوم. يُرجى المحاولة مرة أخرى باستخدام صورة بتنسيق آخر.</string>
     <string name="permission_denied_prev">تم رفض الإذن سابقاً</string>
     <string name="er_notification_permission_denied">تم رفض إذن الإشعارات مسبقًا، يمكنك منح الإذن لتلقي الإشعارات من صفحة الإعدادات على جهاز الأندرويد الخاص بك. \n<b>هل تود فتح صفحة الإعدادات؟</b></string>
 </resources>
